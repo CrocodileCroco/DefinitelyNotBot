@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setGame('Bot Hunger Games')
 });
 
 client.on('message', message => {
@@ -15,6 +14,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'bing') {
     	message.reply('BONG!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'gameset') {
+    	client.user.setGame('test')
   	}
 });
 
