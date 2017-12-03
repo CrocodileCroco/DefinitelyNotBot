@@ -19,7 +19,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'gameset') {
-    	client.user.setGame('test')
+    	client.user.setGame('test');
   	}
 });
 
