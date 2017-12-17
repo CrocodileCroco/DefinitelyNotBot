@@ -18,10 +18,24 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'gameset') {
-    	client.user.setGame('test');
+    if (message.content === 'rageux') {
+    	message.reply('je suis literallement en trains de rire sur ta face');
   	}
 });
+
+client.on('message', message => {
+    if (message.content === 'croco') {
+    	message.reply('oui? si c pour me provoquer je te dit retourne dans ton coin caillou , si c l inverse dit toi quil a pas vraiment le temps de parler');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'troll') {
+    	message.reply('morsay et cortex cest du troll non professionel tout comme TOI');
+  	}
+});
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
