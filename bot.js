@@ -39,7 +39,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'horloge') {
-    	message.reply('Il est' + current_hour + 'aujourdhui');
+    	message.reply('Il est ' + current_hour + ' heures aujourdhui');
   	}
 });
 
