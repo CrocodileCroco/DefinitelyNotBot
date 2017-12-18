@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var date = new Date();
+var current_hour = date.getHours();
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -34,6 +36,26 @@ client.on('message', message => {
     	message.reply('morsay et cortex cest du troll non professionel tout comme TOI');
   	}
 });
+
+client.on('message', message => {
+    if (message.content === 'horloge') {
+    	message.reply('Il est' + current_hour + 'aujourdhui');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'tg le bot') {
+    	message.reply('C pas gentil :(');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'nope') {
+    	message.reply('Correction : Nope.AVI');
+  	}
+});
+
+
 
 
 
