@@ -61,8 +61,71 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'ok google') {
+    	message.reply('Pardon? Je ne suis pas Google ! Voyons donc :| ');
+  	}
+});
 
+client.on('message', message => {
+    if (message.content === 'rastacouette') {
+    	message.reply('Queuah?!');
+  	}
+});
 
+client.on('message', message => {
+    if (message.content === 'allo') {
+    	message.reply('Oui? Allo?? http://i.cubeupload.com/LmqyrB.png ');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'a plus') {
+    	message.reply('A plus tard !');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'tg') {
+    	message.reply('Tes pas sympa :C nyaaa ...');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'la') {
+    	message.reply('Ou la !');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'ftg') {
+    	message.reply('Au moins j aurais essayé');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'cyka blyat') {
+    	message.reply('NYA ! NE DIT PAS SA SINON TU AURA AFFAIRE A MUAH ! NYYA');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'google') {
+    	message.reply('google est ton ami');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'le') {
+    	message.reply('Le quoi? http://i.cubeupload.com/LmqyrB.png ');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'ha') {
+    	message.reply('http://i.cubeupload.com/ubtikz.png');
+  	}
+});
 
 
 // THIS  MUST  BE  THIS  WAY
