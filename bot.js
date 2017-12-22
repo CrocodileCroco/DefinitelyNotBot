@@ -5,7 +5,6 @@ var current_hour = date.getHours();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setUsername('Katie')
 });
 
 client.on('message', message => {
