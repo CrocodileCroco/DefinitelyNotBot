@@ -127,6 +127,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'ptdr t ki') {
+    	message.reply('http://i.cubeupload.com/C5tg7S.gif EUH...');
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
