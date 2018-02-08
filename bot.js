@@ -135,6 +135,29 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!bigmac') {
+    	message.reply('http://i.cubeupload.com/fnlXfP.png big mac pliz');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!bigmacpliz') {
+    	message.reply('http://i.cubeupload.com/fnlXfP.png big mac pliz');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!bigmacplz') {
+    	message.reply('http://i.cubeupload.com/fnlXfP.png big mac pliz');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'SOMEBODY TOUCHA MY SPAGHETT') {
+    	message.reply('http://i0.kym-cdn.com/photos/images/newsfeed/001/332/955/58e.gif');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
