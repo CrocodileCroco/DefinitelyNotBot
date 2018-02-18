@@ -159,5 +159,29 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!excellent') {
+    	message.reply('https://static.comicvine.com/uploads/square_medium/0/4772/151575-47591-mr-burns.jpg');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!zaius') {
+    	message.reply('https://i.pinimg.com/originals/80/e2/59/80e259486e8ddb121b416602524b3c89.jpg EXCELLENT');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!zaius2') {
+    	message.reply('https://im-01.gifer.com/fetch/w300-preview/d1/d1b2f392af965a301b00f38d33d08990.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!zaiusohnodude') {
+    	message.reply('https://i.pinimg.com/originals/46/37/06/463706b1a9e56ad3cde2f37d13c15f9d.png');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
