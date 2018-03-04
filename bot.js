@@ -28,7 +28,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'croco') {
-    	message.reply('oui? si c pour me provoquer je te dit retourne dans ton coin caillou , si c l inverse dit toi quil a pas vraiment le temps de parler');
+    	message.reply('LL on te parle!');
   	}
 });
 
