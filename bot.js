@@ -225,6 +225,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!animoji help') {
+    	message.channel.send('Animojis Disponible : cat, chicken, lion, rabbit, poop, monkey, fox');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
