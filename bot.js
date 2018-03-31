@@ -183,5 +183,48 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!animoji fox') {
+    	message.channel.send('https://fthmb.tqn.com/ROC5xD9jkOwXHXms6oA3KzICeAI=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/iphonex_animoji_fox-59dd137c03f4020010a60b54.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji poop') {
+    	message.channel.send('https://worldissmall.fr/wp-content/uploads/2017/10/animoji-poo-caca.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji monkey') {
+    	message.channel.send('https://cdn.makeuseof.com/wp-content/uploads/2017/12/emoji_monkey.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji rabbit') {
+    	message.channel.send('https://emojipedia-us.s3.amazonaws.com/content/2017/09/21/animoji-rabbit-emojipedia.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji lion') {
+    	message.channel.send('http://media.idownloadblog.com/wp-content/uploads/2018/01/iOS-11.3-lion-Animoji.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji chicken') {
+    	message.channel.send('http://media.idownloadblog.com/wp-content/uploads/2017/11/Animoji-to-gif-example.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji cat') {
+    	message.channel.send('https://cdn.makeuseof.com/wp-content/uploads/2017/12/emoji_cat.gif');
+  	}
+});
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
