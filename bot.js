@@ -227,7 +227,19 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!animoji help') {
-    	message.channel.send('Animojis Disponible : cat, chicken, lion, rabbit, poop, monkey, fox');
+    	message.channel.send('Animojis Disponible : cat, chicken, lion, rabbit, poop, monkey, fox, poisson, carpe');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji poisson') {
+    	message.channel.send('https://78.media.tumblr.com/8f0beb90a033e02e6a3292887a864659/tumblr_osdyr7KCW81u2x70wo2_400.png Miaou ! Dommage! Tu as 0.00000000001% de chance de pouvoir avoir un poisson! Joyeux chat du mois de avril');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!animoji carpe') {
+    	message.channel.send('https://i.pinimg.com/736x/5f/1a/70/5f1a703fc393e95c9d89bc389833df0e--funny-cat-faces-emoticon.jpg oh mince j"ai oublié que tu voulais une carpe, miaou d"avril miahaha');
   	}
 });
 
