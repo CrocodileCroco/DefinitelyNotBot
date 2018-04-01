@@ -6,7 +6,7 @@ var current_hour = date.getHours();
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
-    client.user.setActivity('manger du poisson', { type: 'PLAYING' });
+    client.user.setPresence({ game: { name: 'Manger du poisson', type: 0 } });
 });
 
 client.on('message', message => {
