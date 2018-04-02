@@ -6,7 +6,7 @@ var current_hour = date.getHours();
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
-    client.user.setActivity('YouTube', { type: 'gsgsgs' });
+    process.exit()
 });
 
 client.on('message', message => {
