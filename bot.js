@@ -6,7 +6,7 @@ var current_hour = date.getHours();
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
-    process.exit()
+    client.user.setPresence({ game: { name: 'Être pa vil1', type: 0 } });
 });
 
 client.on('message', message => {
