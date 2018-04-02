@@ -6,7 +6,7 @@ var current_hour = date.getHours();
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
-    client.user.setPresence({ game: { name: 'Manger du poisson', type: 0 } });
+    client.user.setPresence({ game: { name: 'Être pa vil1', type: 0 } });
 });
 
 client.on('message', message => {
@@ -228,7 +228,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!animoji help') {
-    	message.channel.send('Animojis Disponible : cat, chicken, lion, rabbit, poop, monkey, fox, poisson, carpe');
+    	message.channel.send('Animojis Disponible : cat, chicken, lion, rabbit, poop, monkey, fox');
   	}
 });
 
