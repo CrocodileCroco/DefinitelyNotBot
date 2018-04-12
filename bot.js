@@ -244,5 +244,18 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '@everyone') {
+    	message.reply('https://i.redd.it/tlvf3mo9tosy.jpg');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '@here') {
+    	message.reply('https://i.redd.it/tlvf3mo9tosy.jpg');
+  	}
+});
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
