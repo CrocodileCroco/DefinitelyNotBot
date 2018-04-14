@@ -256,6 +256,18 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 't!ouinon') {
+    	message.channel.send('t!choose oui | non');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 't!tg') {
+    	message.channel.send('Voici un tatsugotchi, si il n"apparait pas il faut l"acheter, désolé');
+  	}
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
