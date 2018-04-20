@@ -268,6 +268,29 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    message.edit(message.content.replace(/.../gi, "[C pas facile de donner des vents]"))
+       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
+       .catch(console.error);
+});
+
+client.on('message', message => {
+    message.edit(message.content.replace(/../gi, "[C pas facile de donner des vents]"))
+       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
+       .catch(console.error);
+});
+
+client.on('message', message => {
+    message.edit(message.content.replace(/..../gi, "[C pas facile de donner des vents]"))
+       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
+       .catch(console.error);
+});
+
+client.on('message', message => {
+    message.edit(message.content.replace(/...../gi, "[C pas facile de donner des vents]"))
+       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
+       .catch(console.error);
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
