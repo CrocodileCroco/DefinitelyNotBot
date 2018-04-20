@@ -282,7 +282,7 @@ client.on('message', message => {
   });
   if (containsBadWord) {
     message.delete(1);
-    message.channel.send("That word's not appropriate!");
+    message.channel.send("Stp ne fout pas des vents, c'est pas sympa.");
   }
 });
 
