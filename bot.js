@@ -268,28 +268,14 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    message.edit(message.content.replace(/.../gi, "[C pas facile de donner des vents]"))
-       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
-       .catch(console.error);
-});
-
-client.on('message', message => {
-    message.edit(message.content.replace(/../gi, "[C pas facile de donner des vents]"))
-       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
-       .catch(console.error);
-});
-
-client.on('message', message => {
-    message.edit(message.content.replace(/..../gi, "[C pas facile de donner des vents]"))
-       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
-       .catch(console.error);
-});
-
-client.on('message', message => {
-    message.edit(message.content.replace(/...../gi, "[C pas facile de donner des vents]"))
-       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
-       .catch(console.error);
+var filtered = ["...", "....", "....."];
+client.on('message', m => {
+    for (var filter of filtered) {
+        if (m.content.indexOf(filter) !== -1) {
+            message.delete(1000);
+            return;
+        }
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
