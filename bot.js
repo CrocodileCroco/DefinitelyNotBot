@@ -273,7 +273,7 @@ client.on('message', m => {
     for (var filter of filtered) {
         if (m.content.indexOf(filter) !== -1) {
             message.delete(1000);
-            });
+            };
             return;
         }
     }
