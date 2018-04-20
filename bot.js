@@ -268,15 +268,22 @@ client.on('message', message => {
   	}
 });
 
-var filtered = ["...", "....", "....."];
-client.on('message', m => {
-    for (var filter of filtered) {
-        if (m.content.indexOf(filter) !== -1) {
-            message.delete(1000);
-            };
-            return;
-        }
-    }
+var badWords = [
+  '...',
+  '....',
+  '.....',
+  '......'
+];
+
+client.on('message', message => {
+  var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
+  var containsBadWord = words.some(word => {
+    return badWords.includes(word);
+  });
+  if (containsBadWord) {
+    message.delete(1);
+    message.channel.send("That word's not appropriate!");
+  }
 });
 
 // THIS  MUST  BE  THIS  WAY
