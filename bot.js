@@ -311,23 +311,5 @@ client.on('message', message => {
 });
 
 
-var badWords = [
-  '...',
-  '....',
-  '.....',
-  '......'
-];
-
-client.on('message', message => {
-  var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
-  var containsBadWord = words.some(word => {
-    return badWords.includes(word);
-  });
-  if (containsBadWord) {
-    message.delete(1);
-    message.channel.send("Stp ne fout pas des vents, c'est pas sympa.");
-  }
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
