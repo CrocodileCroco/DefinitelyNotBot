@@ -268,6 +268,37 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!stck') {
+    	message.channel.send('Stickers List : eddy | If you want sticker list of eddy (for example), type !stck eddy list');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck help') {
+    	message.channel.send('Stickers List : eddy | If you want sticker list of eddy (for example), type !stck eddy list');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck eddy list') {
+    	message.channel.send('Eddy Stickers List : edd');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck eddy edd') {
+    	message.channel.send('http://i.cubeupload.com/BT3lxO.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck eddy badlydrawn') {
+    	message.channel.send('http://i.cubeupload.com/vzK08m.png');
+  	}
+});
+
+
 var badWords = [
   '...',
   '....',
