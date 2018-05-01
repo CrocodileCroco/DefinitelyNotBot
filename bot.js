@@ -270,19 +270,19 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!stck') {
-    	message.channel.send('Stickers List : eddy | If you want sticker list of eddy (for example), type !stck eddy list');
+    	message.channel.send('Stickers List : eddy, fenneko | If you want sticker list of eddy (for example), type !stck eddy list');
   	}
 });
 
 client.on('message', message => {
     if (message.content === '!stck help') {
-    	message.channel.send('Stickers List : eddy | If you want sticker list of eddy (for example), type !stck eddy list');
+    	message.channel.send('Stickers List : eddy, fenneko | If you want sticker list of eddy (for example), type !stck eddy list');
   	}
 });
 
 client.on('message', message => {
     if (message.content === '!stck eddy list') {
-    	message.channel.send('Eddy Stickers List : edd');
+    	message.channel.send('Eddy Stickers List : edd, badlydrawn');
   	}
 });
 
@@ -295,6 +295,18 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '!stck eddy badlydrawn') {
     	message.channel.send('http://i.cubeupload.com/vzK08m.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck fenneko list') {
+    	message.channel.send('Fenneko Stickers List : hahaha (gif)');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck fenneko hahaha') {
+    	message.channel.send('http://i.cubeupload.com/lM9I36.gif');
   	}
 });
 
