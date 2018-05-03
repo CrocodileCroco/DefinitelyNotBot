@@ -328,6 +328,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'k!dice') {
+    	message.channel.send(Math.floor(Math.random() * 11););
+  	}
+});
+
 
 
 // THIS  MUST  BE  THIS  WAY
