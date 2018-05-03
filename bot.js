@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 var date = new Date();
 var current_hour = date.getHours();
-
+const prefix = "!";
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -336,7 +336,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content.startsWith("!foaas")) {
+  if (message.content.startsWith(prefix + "foaas")) {
         const args = message.content.slice(prefix.length).trim().split(/ +/g);
         const command = args.shift().toLowerCase();
         let fukof = args[0];
