@@ -342,7 +342,7 @@ if(command === "!foaas") {
     const foaas = args.join(" ");
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     // And we get the bot to say the thing: 
-    message.channel.send('https://www.foaas.com/' + sayMessage '/Kaede');
+    message.channel.send("https://www.foaas.com/" + sayMessage "/Kaede");
 }
 
 // THIS  MUST  BE  THIS  WAY
