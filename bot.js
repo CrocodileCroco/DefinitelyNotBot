@@ -2,8 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 var date = new Date();
 var current_hour = date.getHours();
-const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-const command = args.shift().toLowerCase();
+
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -336,6 +335,14 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+  if (message.content.startsWith("!foaas")) {
+        const args = message.content.slice(prefix.length).trim().split(/ +/g);
+        const command = args.shift().toLowerCase();
+        let fukof = args[0];
+        message.channel.send(`https://www.foaas.com/${fukof}/Kaede`)
+  }
+});            
 
 
 // THIS  MUST  BE  THIS  WAY
