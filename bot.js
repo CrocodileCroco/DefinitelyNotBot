@@ -282,7 +282,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!stck eddy list') {
-    	message.channel.send('Eddy Stickers List : edd, badlydrawn');
+    	message.channel.send('Eddy Stickers List : edd, badlydrawn, monroface');
   	}
 });
 
@@ -307,6 +307,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '!stck fenneko hahaha') {
     	message.channel.send('http://i.cubeupload.com/lM9I36.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck eddy monroface') {
+    	message.channel.send('http://i.cubeupload.com/fEYfsf.jpg');
   	}
 });
 
