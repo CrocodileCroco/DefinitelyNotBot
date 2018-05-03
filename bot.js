@@ -336,14 +336,7 @@ client.on('message', message => {
   	}
 });
 
-if(command === "!foaas") {
-    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-    // To get the "message" itself we join the `args` back into a string with spaces: 
-    const foaas = args.join(" ");
-    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
-    // And we get the bot to say the thing: 
-    message.channel.send("https://www.foaas.com/" + sayMessage + "/Kaede");
-}
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
