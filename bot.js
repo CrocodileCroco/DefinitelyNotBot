@@ -271,13 +271,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!stck') {
-    	message.channel.send('Stickers List : eddy, fenneko | If you want sticker list of eddy (for example), type !stck eddy list');
+    	message.channel.send('Stickers List : eddy, fenneko, ptp (zapdexio) | If you want sticker list of eddy (for example), type !stck eddy list');
   	}
 });
 
 client.on('message', message => {
     if (message.content === '!stck help') {
-    	message.channel.send('Stickers List : eddy, fenneko | If you want sticker list of eddy (for example), type !stck eddy list');
+    	message.channel.send('Stickers List : eddy, fenneko, ptp (zapdexio) | If you want sticker list of eddy (for example), type !stck eddy list');
   	}
 });
 
@@ -316,6 +316,44 @@ client.on('message', message => {
     	message.channel.send('http://i.cubeupload.com/fEYfsf.jpg');
   	}
 });
+
+
+client.on('message', message => {
+    if (message.content === '!stck ptp list') {
+    	message.channel.send('ptp, russie, ayy pepito, yolo, ss');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck ptp ptp') {
+    	message.channel.send('https://cdn.discordapp.com/attachments/355745229485244417/441965448263630868/ptp.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck ptp russie') {
+    	message.channel.send('https://cdn.discordapp.com/attachments/355745229485244417/441966399141707789/ptprloussie.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck ptp ayy pepito') {
+    	message.channel.send('https://cdn.discordapp.com/attachments/355745229485244417/441966460059910144/ptpayypepito.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck ptp yolo') {
+    	message.channel.send('https://cdn.discordapp.com/attachments/355745229485244417/441966591287230485/ptpthuglife.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stck ptp ss') {
+    	message.channel.send('https://cdn.discordapp.com/attachments/355745229485244417/441966665878470656/ptpmui.png');
+  	}
+});
+
 
 client.on('message', message => {
     if (message.content === '!web') {
