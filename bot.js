@@ -368,6 +368,42 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!invite') {
+    	message.channel.send('**FRANCAIS** : Vous Souhaitez Inviter Kaede? Rendez-vous sur LLCentral (Envoyez un Message Privé a Mobirise (LL) le créateur pour le lien, normalement il est sur un des serveur avec kaede), rendez vous dans le salon processus d"invitation Kaede, il faut que Mobirise soit sur votre serveur tout le temps, ne le kickez/bannez pas! Il faudra mettre LL en admin aussi afin d"inviter le bot! Soyez sur aussi de ne pas quitter LLCentral!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!inviter') {
+    	message.channel.send('**FRANCAIS** : Vous Souhaitez Inviter Kaede? Rendez-vous sur LLCentral (Envoyez un Message Privé a Mobirise (LL) le créateur pour le lien, normalement il est sur un des serveur avec kaede), rendez vous dans le salon processus d"invitation Kaede, il faut que Mobirise soit sur votre serveur tout le temps, ne le kickez/bannez pas! Il faudra mettre LL en admin aussi afin d"inviter le bot! Soyez sur aussi de ne pas quitter LLCentral!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!invit') {
+    	message.channel.send('**FRANCAIS** : Vous Souhaitez Inviter Kaede? Rendez-vous sur LLCentral (Envoyez un Message Privé a Mobirise (LL) le créateur pour le lien, normalement il est sur un des serveur avec kaede), rendez vous dans le salon processus d"invitation Kaede, il faut que Mobirise soit sur votre serveur tout le temps, ne le kickez/bannez pas! Il faudra mettre LL en admin aussi afin d"inviter le bot! Soyez sur aussi de ne pas quitter LLCentral!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!invitez') {
+    	message.channel.send('**FRANCAIS** : Vous Souhaitez Inviter Kaede? Rendez-vous sur LLCentral (Envoyez un Message Privé a Mobirise (LL) le créateur pour le lien, normalement il est sur un des serveur avec kaede), rendez vous dans le salon processus d"invitation Kaede, il faut que Mobirise soit sur votre serveur tout le temps, ne le kickez/bannez pas! Il faudra mettre LL en admin aussi afin d"inviter le bot! Soyez sur aussi de ne pas quitter LLCentral!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!invit') {
+    	message.channel.send('**FRANCAIS** : Vous Souhaitez Inviter Kaede? Rendez-vous sur LLCentral (Envoyez un Message Privé a Mobirise (LL) le créateur pour le lien, normalement il est sur un des serveur avec kaede), rendez vous dans le salon processus d"invitation Kaede, il faut que Mobirise soit sur votre serveur tout le temps, ne le kickez/bannez pas! Il faudra mettre LL en admin aussi afin d"inviter le bot! Soyez sur aussi de ne pas quitter LLCentral!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!lien') {
+    	message.channel.send('**FRANCAIS** : Vous Souhaitez Inviter Kaede? Rendez-vous sur LLCentral (Envoyez un Message Privé a Mobirise (LL) le créateur pour le lien, normalement il est sur un des serveur avec kaede), rendez vous dans le salon processus d"invitation Kaede, il faut que Mobirise soit sur votre serveur tout le temps, ne le kickez/bannez pas! Il faudra mettre LL en admin aussi afin d"inviter le bot! Soyez sur aussi de ne pas quitter LLCentral!');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'k!dice') {
     	message.channel.send(Math.floor(Math.random() * 11));
   	}
