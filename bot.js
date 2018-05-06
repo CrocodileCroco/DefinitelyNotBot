@@ -418,6 +418,15 @@ client.on('message', message => {
   }
 });            
 
+client.on('message', message => {
+  if (message.content.startsWith(prefix + "say")) {
+        const args = message.content.slice(prefix.length).trim().split(/ +/g);
+        const command = args.shift().toLowerCase();
+        let saycomm = args[0];
+        message.reply(`${saycomm}`)
+  }
+});            
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
