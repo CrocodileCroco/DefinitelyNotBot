@@ -420,10 +420,12 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content.startsWith(prefix + "say")) {
-        const args = message.content.slice(prefix.length).trim().split(/ +/g);
-        const command = args.shift().toLowerCase();
-        let saycomm = args[0];
-        message.reply(`${saycomm}`)
+      const args = message.content.slice(prefix.length).trim().split(/ +/g);  
+      const sayMessage = args.join(" ");
+        // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+        message.delete().catch(O_o=>{}); 
+        // And we get the bot to say the thing: 
+        message.channel.send(sayMessage);
   }
 });            
 
