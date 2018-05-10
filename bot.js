@@ -3,6 +3,7 @@ const client = new Discord.Client();
 var date = new Date();
 var current_hour = date.getHours();
 const prefix = "!";
+let price = require('crypto-price')
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -400,6 +401,16 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '!lien') {
     	message.channel.send('**FRANCAIS** : Vous Souhaitez Inviter Kaede? Rendez-vous sur LLCentral (Envoyez un Message Privé a Mobirise (LL) le créateur pour le lien, normalement il est sur un des serveur avec kaede), rendez vous dans le salon processus d"invitation Kaede, il faut que Mobirise soit sur votre serveur tout le temps, ne le kickez/bannez pas! Il faudra mettre LL en admin aussi afin d"inviter le bot! Soyez sur aussi de ne pas quitter LLCentral!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!btc') {
+    	price.getCryptoPrice(base, crypto).then(obj => { // Base for ex - USD, Crypto for ex - ETH 
+            message.channel.send("Le Bitcoin coute" + obj.price);
+        }).catch(err => {
+            console.log(err)
+    })
   	}
 });
 
