@@ -10,6 +10,8 @@
     "discord.js": "11.1.0",
     "request": "2.81.0",
     "node-fetch": "2.1.2",
-    "crypto-price": "0.0.6"
+    "crypto-price": "0.0.6",
+    "request": "2.85.0",
+    "node-coinmarketcap": "0.2.0"
   }
 }
