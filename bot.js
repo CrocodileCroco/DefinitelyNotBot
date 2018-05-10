@@ -406,7 +406,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!btc') {
-    	price.getCryptoPrice(BTC, crypto).then(obj => { // Base for ex - USD, Crypto for ex - ETH 
+    	price.getCryptoPrice(USD, BTC).then(obj => { // Base for ex - USD, Crypto for ex - ETH 
             message.channel.send("Le Bitcoin coute" + obj.price);
         }).catch(err => {
             console.log(err)
