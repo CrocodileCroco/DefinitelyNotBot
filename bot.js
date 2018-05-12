@@ -431,7 +431,7 @@ client.on('message', message => {
     if (message.content === 'parler a mikit') {
     	          var randomAnswers = mikiti[Math.floor(Math.random() * mikiti.length)];
                   message.channel.send(randomAnswers);
-        });
+        };
   	}
 });
 
