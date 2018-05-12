@@ -7,6 +7,19 @@ let price = require('crypto-price')
 var CoinMarketCap = require("node-coinmarketcap");
 var coinmarketcap = new CoinMarketCap();
 
+var mikiti = [
+  "**Mikit trouve que tu n'es pas locataire**",
+  "Il ne faut pas être un vilain mikit, mikit cher locataire",
+  "Locataire... Tu n'es pas aussi drole que moi :|",
+  "Locataire... C'est vraiment sympa de t'avoir rencontré, mais **SAUPIQUET EST UN MEME MORT** mikit.",
+  "Ne te décourage pas mon cher locataire, mikit te soutiens dans ton aventure",
+  "Locataire, la richesse viendra vers toi un jour",
+  "Locataire, utilise mon délire, tu sera connu après, locataire.",
+  "Croyez Moi Locataire, je ne fait qu'essayez de vous faire rire avec mon délire, n'aviez vous pas découvert toute les vidéos mikit?",
+  "Locataire, c'est pas facile de ne pas avoir de la richesse en euro, la revente vous fera de la richesse je l'espère",
+  "Locataire, ce n'est pas facile de payer les impôts, courage."
+]
+
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
@@ -410,6 +423,14 @@ client.on('message', message => {
     if (message.content === '!btc') {
     	    coinmarketcap.get("bitcoin", coin => {
             message.channel.send("En USD, le bitcoin coute " + coin.price_usd); // Prints the price in USD of BTC at the moment.
+        });
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'parler a mikit') {
+    	          var randomAnswers = mikiti[Math.floor(Math.random() * mikiti.length)];
+                  message.channel.send(randomAnswers);
         });
   	}
 });
