@@ -427,12 +427,11 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'parler a mikit') {
-    	          var randomAnswers = mikiti[Math.floor(Math.random() * mikiti.length)];
-                  message.channel.send(randomAnswers);
-        };
-  	}
+client.on("message", (message) => {
+    if (message.content.startsWith("parler a mikit")) {
+      var randomAnswers = mikiti[Math.floor(Math.random() * mikiti.length)];
+      message.channel.send(randomAnswers);
+    }
 });
 
 client.on('message', message => {
