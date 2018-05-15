@@ -420,6 +420,16 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === '!createur') {
+      if (message.author.id !== '313264056733532170') {
+          let myRole = message.guild.roles.find("name", "Créateur");
+          let member = message.author();
+    	    member.addRole(myRole).catch(console.error);
+        }
+      }
+});
+
+client.on('message', message => {
     if (message.content === '!btc') {
     	    coinmarketcap.get("bitcoin", coin => {
             message.channel.send("En USD, le bitcoin coute " + coin.price_usd); // Prints the price in USD of BTC at the moment.
