@@ -419,15 +419,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === '!createur') {
-      if (message.author.id !== '313264056733532170') {
-          let myRole = message.guild.roles.find("name", "Créateur");
-          let member = message.member();
-    	    member.addRole(myRole).catch(console.error);
-        }
-      }
-});
 
 client.on('message', message => {
     if (message.content === '!btc') {
