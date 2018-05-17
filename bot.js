@@ -20,6 +20,18 @@ var mikiti = [
   "Locataire, ce n'est pas facile de payer les impôts, courage."
 ]
 
+var delircalc = [
+  "Ce délire tiendra 1 jour",
+  "Ce délire tiendra 3 jours",
+  "Ce délire tiendra 1 mois",
+  "Ce délire tiendra 2 mois",
+  "Ce délire est invincible",
+  "Ce délire tiendra 9 mois",
+  "Ce délire est éternel mais périmation possible",
+  "Ce délire tiendra 1 heure",
+  "Ce délire est nul, ce n'est donc pas un bon délire"
+]
+
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
@@ -431,6 +443,13 @@ client.on('message', message => {
 client.on("message", (message) => {
     if (message.content.startsWith("parler a mikit")) {
       var randomAnswers = mikiti[Math.floor(Math.random() * mikiti.length)];
+      message.channel.send(randomAnswers);
+    }
+});
+
+client.on("message", (message) => {
+    if (message.content.startsWith("!délirecalcul")) {
+      var randomAnswers = delircalc[Math.floor(Math.random() * delircalc.length)];
       message.channel.send(randomAnswers);
     }
 });
