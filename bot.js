@@ -29,7 +29,20 @@ var delircalc = [
   "Ce délire tiendra 9 mois",
   "Ce délire est éternel mais périmation possible",
   "Ce délire tiendra 1 heure",
-  "Ce délire est nul, ce n'est donc pas un bon délire"
+  "Ce délire est nul, ce n'est donc pas un bon délire",
+  "Ce délire EST NUL POUR TOUJOURS MOUAHAHA",
+  "Ce délire est aussi nul que les lapins crétins",
+  "Ce délire tiendra 1 an",
+  "Ce délire tiendra 2 an",
+  "Ce délire est mort si quelqun écris patate après mon message",
+  "TON DELIRE EST INVALIDE",
+  "Tu veut me faire rigoler ou quoi mdr? Ton délire est aussi nul que le délire sauce ET SERA PROBABLEMENT **JAMAIS** UN DELIRE LOL",
+  "Même bill gates il a rigolé, ton délire est nul",
+  "Ton délire, c est de la poudre de bide-impimpim",
+  "BOOM! ton délire tiendra 3 ans!",
+  "Mouais 2 minutes ton délire tiendra",
+  "Ce délire tiendra 1 milliseconde",
+  "Ce délire tiendra même pas 1 milliseconde"
 ]
 
 client.on('ready', () => {
