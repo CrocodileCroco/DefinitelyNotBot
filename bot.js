@@ -42,7 +42,20 @@ var delircalc = [
   "BOOM! ton délire tiendra 3 ans!",
   "Mouais 2 minutes ton délire tiendra",
   "Ce délire tiendra 1 milliseconde",
-  "Ce délire tiendra même pas 1 milliseconde"
+  "Ce délire tiendra même pas 1 milliseconde",
+  "Tu es le roi des délires, ton délire tiendra 9 ans",
+  "Mikit était mieux que ton délire",
+  "Sauce? MDR C UN DELIR NUL",
+  "TON DELIRE A PROVOQUER UNE ERREUR DANS MON SYSTEME!",
+  "Ton délire est aussi nul que fortnite, TON DELIRE EST NUL",
+  "Scan du délire en cours... c'est un délire nul, 0/10 et ton délire sera jamais un délire, scan terminé",
+  "KefKifPaf? Les délires nul de l'apéro ! (ton délire est nul)",
+  "Ce délire tiendra 10000000000000000000000000000000000000000000000000000000000 ans",
+  "Ce délire est milhouse donc pas un meme !",
+  "Mikit dit : Ton délire est vraiment vraiment VRAIMENT **VRAIMENT** nul.",
+  "Une menace a été détecté : Virus.DélirePérimé",
+  "JE SUIS MALADE A CAUSE DE TON DELIRE",
+  "**DELIRE DE LOKATAIR! NUL**"
 ]
 
 client.on('ready', () => {
