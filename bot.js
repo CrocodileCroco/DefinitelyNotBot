@@ -6,6 +6,7 @@ const prefix = "!";
 let price = require('crypto-price')
 var CoinMarketCap = require("node-coinmarketcap");
 var coinmarketcap = new CoinMarketCap();
+var bossla = 0
 
 var mikiti = [
   "**Mikit trouve que tu n'es pas locataire**",
@@ -485,6 +486,31 @@ client.on('message', message => {
     	message.channel.send(Math.floor(Math.random() * 11));
   	}
 });
+
+client.on('message', message => {
+    if (message.content === '!boss') {
+    	  if (bossla === 0) {
+          var bossla = 1
+          var bossvie = 100
+          message.channel.send('Un Boss Apparait avec 100 vies');
+        } else {
+          message.channel.send('Le boss est déja apparu!')
+    }
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!fightboss') {
+    	  if (bossla === 1) {
+          var bossvie = bossvie - 3
+          message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
+        } else {
+          message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse')
+    }
+  	}
+});
+
+
 
 client.on('message', message => {
   if (message.content.startsWith(prefix + "foaas")) {
