@@ -504,6 +504,7 @@ if (message.content === '!boss') {
     	  if (bossla == 0) {
           bossla = 1;
           message.channel.send('Un Boss Apparait avec 100 vies');
+          return;
         }
         if (bossla == 1) {
           message.channel.send('Le boss est déja apparu!');
