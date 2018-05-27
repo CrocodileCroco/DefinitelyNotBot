@@ -492,6 +492,9 @@ client.on('message', message => {
     	  if (bossla == 1) {
           bossvie = bossvie - 3
           message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
+          if (bossvie < 0) {
+           message.channel.send('Pas besoin d"attaquer! Le boss est mort, fait !bossheal pour que il reapparaisse'); 
+          }
         } 
         if (bossla == 0) {
           message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse');
