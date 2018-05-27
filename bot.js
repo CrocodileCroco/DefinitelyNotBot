@@ -5,7 +5,6 @@ var current_hour = date.getHours();
 const prefix = "!";
 let price = require('crypto-price')
 var CoinMarketCap = require("node-coinmarketcap");
-var coinmarketcap = new CoinMarketCap();
 var bossla = 0;
 
 var mikiti = [
@@ -487,35 +486,14 @@ client.on('message', message => {
   	}
 });
 
-
 client.on('message', message => {
   if (message.content === '!fightboss') {
     	  if (bossla == 1) {
-          var bossvie = bossvie - 3
-          message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
-        } else if (bossla == 0) {
-          message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse')
-    }
-  	}
-      if (message.content === '!boss') {
-    	  if (bossla == 0) {
-          var bossla = 1
-          var bossvie = 100
-          message.channel.send('Un Boss Apparait avec 100 vies');
-        } else if (bossla == 1) {
-          message.channel.send('Le boss est déja apparu!')
-    }
-  	}
-});
-
-client.on('message', message => {
-  if (message.content === '!fightboss') {
-    	  if (bossla == 1) {
-          var bossvie = bossvie - 3
+          bossvie = bossvie - 3
           message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
         } 
         if (bossla == 0) {
-          message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse')
+          message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse');
         }
   	}
 });
@@ -523,12 +501,12 @@ client.on('message', message => {
 client.on('message', message => {
 if (message.content === '!boss') {
     	  if (bossla == 0) {
-          var bossla = 1
-          var bossvie = 100
+          bossla = 1;
+          var bossvie = 100;
           message.channel.send('Un Boss Apparait avec 100 vies');
         }
         if (bossla == 1) {
-          message.channel.send('Le boss est déja apparu!')
+          message.channel.send('Le boss est déja apparu!');
         }
   	}
 });
