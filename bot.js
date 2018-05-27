@@ -489,7 +489,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!boss') {
-    	  if (bossla === 0) {
+    	  if (bossla == 0) {
           var bossla = 1
           var bossvie = 100
           message.channel.send('Un Boss Apparait avec 100 vies');
@@ -501,7 +501,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!fightboss') {
-    	  if (bossla === 1) {
+    	  if (bossla == 1) {
           var bossvie = bossvie - 3
           message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
         } else if (bossla == 0) {
