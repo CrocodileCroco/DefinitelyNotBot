@@ -487,25 +487,23 @@ client.on('message', message => {
   	}
 });
 
+
 client.on('message', message => {
-    if (message.content === '!boss') {
+  if (message.content === '!fightboss') {
+    	  if (bossla == 1) {
+          var bossvie = bossvie - 3
+          message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
+        } else if (bossla == 0) {
+          message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse')
+    }
+  	}
+      if (message.content === '!boss') {
     	  if (bossla == 0) {
           var bossla = 1
           var bossvie = 100
           message.channel.send('Un Boss Apparait avec 100 vies');
         } else if (bossla == 1) {
           message.channel.send('Le boss est déja apparu!')
-    }
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '!fightboss') {
-    	  if (bossla == 1) {
-          var bossvie = bossvie - 3
-          message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
-        } else if (bossla == 0) {
-          message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse')
     }
   	}
 });
