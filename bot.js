@@ -6,7 +6,7 @@ const prefix = "!";
 let price = require('crypto-price')
 var CoinMarketCap = require("node-coinmarketcap");
 var coinmarketcap = new CoinMarketCap();
-var bossla = 0
+var bossla = 0;
 
 var mikiti = [
   "**Mikit trouve que tu n'es pas locataire**",
