@@ -6,6 +6,7 @@ const prefix = "!";
 let price = require('crypto-price')
 var CoinMarketCap = require("node-coinmarketcap");
 var bossla = 0;
+var bossvie = 100;
 
 var mikiti = [
   "**Mikit trouve que tu n'es pas locataire**",
@@ -502,7 +503,6 @@ client.on('message', message => {
 if (message.content === '!boss') {
     	  if (bossla == 0) {
           bossla = 1;
-          var bossvie = 100;
           message.channel.send('Un Boss Apparait avec 100 vies');
         }
         if (bossla == 1) {
