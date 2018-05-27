@@ -7,6 +7,7 @@ let price = require('crypto-price')
 var CoinMarketCap = require("node-coinmarketcap");
 var bossla = 0;
 var bossvie = 100;
+var clicker = 0;
 
 var mikiti = [
   "**Mikit trouve que tu n'es pas locataire**",
@@ -413,6 +414,13 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '!web') {
     	message.channel.send('https://crocodilecroco.github.io/kaede/');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!clicker') {
+      clicker = clicker + 1
+    	message.channel.send('Vous avez cliqué! Maintenant il y a ' + clicker + ' clics!');
   	}
 });
 
