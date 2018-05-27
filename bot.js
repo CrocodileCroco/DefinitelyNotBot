@@ -493,7 +493,7 @@ client.on('message', message => {
           var bossla = 1
           var bossvie = 100
           message.channel.send('Un Boss Apparait avec 100 vies');
-        } else {
+        } else if (bossla == 1) {
           message.channel.send('Le boss est déja apparu!')
     }
   	}
@@ -504,7 +504,7 @@ client.on('message', message => {
     	  if (bossla === 1) {
           var bossvie = bossvie - 3
           message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
-        } else {
+        } else if (bossla == 0) {
           message.channel.send('Le boss a pas encore apparu! Fait !boss pour que il apparaisse')
     }
   	}
