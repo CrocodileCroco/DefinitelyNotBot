@@ -512,7 +512,12 @@ if (message.content === '!boss') {
   	}
 });
 
-
+client.on('message', message => {
+    if (message.content === '!bossheal') {
+      bossvie = 100;
+    	message.channel.send('Le boss est réinitialisé, ATTENTION SI VOUS REINITIALISEZ ABUSIVEMENT, VOUS AUREZ UN AVERTISSEMENT');
+  	}
+});
 
 client.on('message', message => {
   if (message.content.startsWith(prefix + "foaas")) {
@@ -522,6 +527,7 @@ client.on('message', message => {
         message.reply(`https://www.foaas.com/${fukof}/Kaede`)
   }
 });            
+
 
 client.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
