@@ -10,6 +10,7 @@ var bossvie = 100;
 var clicker = 0;
 
 //test
+//test 2
 
 var mikiti = [
   "**Mikit trouve que tu n'es pas locataire**",
