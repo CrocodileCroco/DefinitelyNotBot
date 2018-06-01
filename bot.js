@@ -9,6 +9,8 @@ var bossla = 0;
 var bossvie = 100;
 var clicker = 0;
 
+//test
+
 var mikiti = [
   "**Mikit trouve que tu n'es pas locataire**",
   "Il ne faut pas être un vilain mikit, mikit cher locataire",
