@@ -579,7 +579,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!stop') {
-    	client.leaveVoiceChannel(message.member.voiceState.channelID);
+    	voiceChannel.leave();
   	}
 });
 
