@@ -559,6 +559,35 @@ client.on('message', message => {
     }
 });            
 
+client.on('message', message => {
+    if (!message.guild) return;
+    if (message.content === '!drmario') {
+      const ytdl = require('ytdl-core');
+    	if (message.member.voiceChannel) {
+      const connection = await message.member.voiceChannel.join();
+        connection.play(ytdl(
+          'https://www.youtube.com/watch?v=uTuK79rgrjY',
+          { filter: 'audioonly' }));
+      } else {
+        message.reply('You need to join a voice channel first!');
+      }
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!stop') {
+    	client.leaveVoiceChannel(message.member.voiceState.channelID);
+  	}
+});
+
+
+
+
+
+
+
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
