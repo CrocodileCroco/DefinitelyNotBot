@@ -5,6 +5,7 @@ var current_hour = date.getHours();
 const prefix = "!";
 let price = require('crypto-price')
 var CoinMarketCap = require("node-coinmarketcap");
+var coinmarketcap = new CoinMarketCap();
 var bossla = 0;
 var bossvie = 100;
 var clicker = 0;
@@ -472,7 +473,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!btc') {
-    	    CoinMarketCap.get("bitcoin", coin => {
+    	    coinmarketcap.get("bitcoin", coin => {
             message.channel.send("En USD, le bitcoin coute " + coin.price_usd); // Prints the price in USD of BTC at the moment.
         });
   	}
