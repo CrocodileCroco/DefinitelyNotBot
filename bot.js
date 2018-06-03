@@ -472,7 +472,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!btc') {
-    	    coinmarketcap.get("bitcoin", coin => {
+    	    CoinMarketCap.get("bitcoin", coin => {
             message.channel.send("En USD, le bitcoin coute " + coin.price_usd); // Prints the price in USD of BTC at the moment.
         });
   	}
