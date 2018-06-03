@@ -12,6 +12,9 @@
     "node-fetch": "2.1.2",
     "crypto-price": "0.0.6",
     "request": "2.85.0",
-    "node-coinmarketcap": "0.2.0"
+    "node-coinmarketcap": "0.2.0",
+    "ytdl-core": "0.20.4",
+    "node-opus": "0.3.0",
+    "ffmpeg-binaries": "3.2.2-3"
   }
 }
