@@ -564,7 +564,7 @@ client.on('message', message => {
     if (message.content === '!drmario') {
       const ytdl = require('ytdl-core');
     	if (message.member.voiceChannel) {
-      const connection = await message.member.voiceChannel.join();
+      const connection = message.member.voiceChannel.join();
         connection.play(ytdl(
           'https://www.youtube.com/watch?v=uTuK79rgrjY',
           { filter: 'audioonly' }));
