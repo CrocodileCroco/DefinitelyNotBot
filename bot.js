@@ -13,6 +13,32 @@ var clicker = 0;
 //test
 //test 2
 
+var hostilegtext = [
+  "Jean",
+  "Eddy",
+  "Le Fort Du Monde",
+  "The Boss",
+  "Boss",
+  "Za",
+  "Thanorio",
+  "Chocapic King",
+  "La légende du trofor",
+  "Le rasta",
+  "Sopiké",
+  "Genocidaire",
+  "Intuable",
+  "Abraham",
+  "LapinouDeTesMorts",
+  "Warudeau",
+  "J'aime-les-placement-de-produit",
+  "Jean-lourd",
+  "Tartinage",
+  "Nounours-clasheur",
+  "JeBouffeMcdoMcJerry",
+  "Présentateur-télé",
+  "Le Roi"
+]
+
 var mikiti = [
   "**Mikit trouve que tu n'es pas locataire**",
   "Il ne faut pas être un vilain mikit, mikit cher locataire",
@@ -583,7 +609,12 @@ client.on('message', message => {
   	}
 });
 
-
+client.on('message', message => {
+    if (message.content === '!bossgen') {
+      var randomboss = hostilegtext[Math.floor(Math.random() * hostilegtext.length)];
+    	message.channel.send('Attention !' + randomboss + ' ' + randomboss + ' ' + randomboss + ' apparait! Avec ' + Math.floor(Math.random() * 1001) + ' point de vies');
+  	}
+});
 
 
 
