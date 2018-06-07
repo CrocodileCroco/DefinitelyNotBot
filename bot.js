@@ -657,7 +657,11 @@ client.on('message', message => {
   	}
 });
 
-
+client.on('message', message => {
+    if (message.content === '!reference') {
+    	message.channel.send('|  ||\n|| |_');
+  	}
+});
 
 
 
