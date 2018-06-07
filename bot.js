@@ -653,7 +653,7 @@ client.on('message', message => {
       var randomboss = hostilegtext[Math.floor(Math.random() * hostilegtext.length)];
       var randomboss2 = hostilegtext[Math.floor(Math.random() * hostilegtext.length)];
       var randomboss3 = hostilegtext[Math.floor(Math.random() * hostilegtext.length)];
-    	message.channel.send('Attention !' + randomboss + ' ' + randomboss2 + ' ' + randomboss3 + ' apparait! Avec ' + Math.floor(Math.random() * 1001) + ' point de vies');
+    	message.channel.send('Attention ! ' + randomboss + ' ' + randomboss2 + ' ' + randomboss3 + ' apparait! Avec ' + Math.floor(Math.random() * 1001) + ' point de vies');
   	}
 });
 
