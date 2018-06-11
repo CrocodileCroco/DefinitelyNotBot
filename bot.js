@@ -129,6 +129,29 @@ var delircalc = [
   "**DELIRE DE LOKATAIR! NUL**"
 ]
 
+var nomjeu = [
+  "Cuphead",
+  "Sonic",
+  "Dessine Ton Aventure",
+  "Kirby",
+  "Megaman",
+  "Zelda",
+  "F-ZaiRO",
+  "Jak And Daxter",
+  "Sly Cooper",
+  "Klonoa",
+  "Re-Volt"
+]
+
+var jeu2 = [
+  "avec un éditeur de niveau",
+  ".",
+  "multijoueur en ligne",
+  "inspiré de splatoon",
+  "sur switch",
+  "compétitif"
+]
+
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
@@ -663,6 +686,13 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!e3generator') {
+      var randnomi = nomjeu[Math.floor(Math.random() * nomjeu.length)];
+      var randtype = jeu2[Math.floor(Math.random() * jeu2.length)];
+    	message.channel.send('Un jeu ' + randnomi + ' ' + randtype);
+  	}
+});
 
 
 
