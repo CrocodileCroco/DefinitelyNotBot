@@ -9,6 +9,7 @@ var coinmarketcap = new CoinMarketCap();
 var bossla = 0;
 var bossvie = 100;
 var clicker = 0;
+var logka = 0;
 
 //test
 //test 2
@@ -694,9 +695,18 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!logkaede on') {
+      logka = 1;
+    	message.channel.send('logs are activated now');
+  	}
+});
 
-
-
+client.on('message', message => {
+    if (logka == 1) {
+    	message.guild.channels.find("name", "kaede-logger").send(message.content + ' | de ' + message.username);
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
