@@ -705,7 +705,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (logka == 1) {
       if (message.author.bot) return;
-    	message.guild.channels.find("name", "kaede-logger").send(message.content + ' | de ' + message.author.username + '#' + message.author.tag);
+    	message.guild.channels.find("name", "kaede-logger").send(message.content + ' | de ' + message.author.tag);
   	}
 });
 
