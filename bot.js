@@ -12,6 +12,7 @@ var clicker = 0;
 var logka = 0;
 var doorgame = 0;
 var doorandom = 0;
+var doorist = ['lol'];
 
 //test
 //test 2
@@ -714,9 +715,6 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '!doorpass') {
       message.channel.send('Trying to Open Door');
-      if (typeof doorist !== 'undefined' && doorist.length > 0) {
-        var doorist = ['lol'];
-      }
       doorandom = Math.floor(Math.random() * 2);
       if (doorist.includes(message.author.id)) {
        message.channel.send('already tried, you need a friend to open');
@@ -730,7 +728,7 @@ client.on('message', message => {
         if (doorandom == 1) {
           doorgame = doorgame + 1;
           message.channel.send('you opened a door! you are now to door number ' + doorgame);
-          var doorist = ['lol'];
+          doorist = ['lol'];
         }
       }
 }});
