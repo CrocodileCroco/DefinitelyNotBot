@@ -719,7 +719,7 @@ client.on('message', message => {
       if (doorist.includes(message.author.id)) {
        message.channel.send({embed : {
             color: 13632027,
-            description: "You already tried! You need a friend to open the door"
+            description: ":construction: You already tried! You need a friend to open the door :construction:"
           }});
        return;
       } else {
@@ -727,7 +727,7 @@ client.on('message', message => {
         if (doorandom == 0) {
           message.channel.send({embed : {
             color: 13632027,
-            description: "Failed to open!"
+            description: ":no_entry_sign: Failed to open! :no_entry_sign:"
           }});
           return;
         }
@@ -735,7 +735,7 @@ client.on('message', message => {
           doorgame = doorgame + 1;
           message.channel.send({embed : {
             color: 8781568,
-            description: "You Opened a door! You Are Now To Door Number " + doorgame
+            description: ":tada: You Opened a door! You Are Now To Door Number " + doorgame + " :tada:"
           }});
           doorist = ['lol'];
         }
