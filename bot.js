@@ -717,17 +717,26 @@ client.on('message', message => {
       message.channel.send('Trying to Open Door');
       doorandom = Math.floor(Math.random() * 2);
       if (doorist.includes(message.author.id)) {
-       message.channel.send('already tried, you need a friend to open');
+       message.channel.send({embed : {
+            color: 13632027,
+            description: "You already tried! You need a friend to open the door"
+          }});
        return;
       } else {
         doorist.push(message.author.id);
         if (doorandom == 0) {
-          message.channel.send('fail!');
+          message.channel.send({embed : {
+            color: 13632027,
+            description: "Failed to open!"
+          }});
           return;
         }
         if (doorandom == 1) {
           doorgame = doorgame + 1;
-          message.channel.send('you opened a door! you are now to door number ' + doorgame);
+          message.channel.send({embed : {
+            color: 8781568,
+            description: "You Opened a door! You Are Now To Door Number " + doorgame
+          }});
           doorist = ['lol'];
         }
       }
