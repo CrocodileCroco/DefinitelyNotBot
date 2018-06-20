@@ -13,6 +13,7 @@ var logka = 0;
 var doorgame = 0;
 var doorandom = 0;
 var doorist = ['lol'];
+var doorlast = "nobody";
 
 //test
 //test 2
@@ -733,6 +734,7 @@ client.on('message', message => {
         }
         if (doorandom == 1) {
           doorgame = doorgame + 1;
+          doorlast = message.author.id;
           message.channel.send({embed : {
             color: 8781568,
             description: ":tada: You Opened a door! You Are Now To Door Number **" + doorgame + "** :tada:"
@@ -741,6 +743,53 @@ client.on('message', message => {
         }
       }
 }});
+
+client.on('message', message => {
+    if (message.content === '!doorstat') {
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "**DoorPass Statistics** [ Door Level : " + doorgame + " ]  [ Last Door Opener : " + doorlast + " ]"
+          }});
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorpassstat') {
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "**DoorPass Statistics** [ Door Level : " + doorgame + " ]  [ Last Door Opener : " + doorlast + " ]"
+          }});
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorstats') {
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "**DoorPass Statistics** [ Door Level : " + doorgame + " ]  [ Last Door Opener : " + doorlast + " ]"
+          }});
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorstatistic') {
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "**DoorPass Statistics** [ Door Level : " + doorgame + " ]  [ Last Door Opener : " + doorlast + " ]"
+          }});
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorpass stat') {
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "**DoorPass Statistics** [ Door Level : " + doorgame + " ]  [ Last Door Opener : " + doorlast + " ]"
+          }});
+  	}
+});
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
