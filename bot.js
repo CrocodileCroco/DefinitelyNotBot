@@ -734,7 +734,7 @@ client.on('message', message => {
         }
         if (doorandom == 1) {
           doorgame = doorgame + 1;
-          doorlast = message.author.id;
+          doorlast = message.author.tag;
           message.channel.send({embed : {
             color: 8781568,
             description: ":tada: You Opened a door! You Are Now To Door Number **" + doorgame + "** :tada:"
