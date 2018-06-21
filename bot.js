@@ -791,7 +791,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!forcedoor') {
-    	if (message.author.id === 313264056733532170) {
+    	if (message.author.id == 313264056733532170) {
         doorist = ['lol'];
         doorgame = doorgame + 1;
         doorlast = message.author.tag;
