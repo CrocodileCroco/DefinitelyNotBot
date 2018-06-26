@@ -14,6 +14,7 @@ var doorgame = 0;
 var doorandom = 0;
 var doorist = ['lol'];
 var doorlast = "nobody";
+var hostilelevel = 0;
 
 //test
 //test 2
@@ -649,6 +650,7 @@ client.on('message', message => {
         // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
         // And we get the bot to say the thing: 
         message.channel.send(sayMessage);
+        message.channel.send("(commande lancée par " + message.author.tag + " )")
     }
 });            
 
@@ -798,6 +800,58 @@ client.on('message', message => {
         message.channel.send('Door Bypassed');
       }
   	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Non.') {
+    	message.channel.send('Oui!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'NON.') {
+    	message.channel.send('OUI!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'NON') {
+    	message.channel.send('OUI!');
+  	}
+});
+
+client.on('message', message => {
+  if (message.content === '!pdp') {
+    message.reply(message.author.avatarURL);
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'ta gueule') {
+    hostilelevel = hostilelevel + 1
+    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'tg') {
+    hostilelevel = hostilelevel + 1
+    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'TG') {
+    hostilelevel = hostilelevel + 1
+    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'Ta gueule') {
+    hostilelevel = hostilelevel + 1
+    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
+  }
 });
 
 
