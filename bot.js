@@ -243,11 +243,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'tg') {
-    	message.reply('Tes pas sympa :C nyaaa ...');
-  	}
-});
 
 client.on('message', message => {
     if (message.content === 'la') {
