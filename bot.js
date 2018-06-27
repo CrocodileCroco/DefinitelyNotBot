@@ -849,6 +849,59 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+    if (message.content === 'A') {
+    	message.channel.send('B');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'unexpected mikit') {
+    	message.channel.send('https://agences.acheterlouerpro.fr/images/expression/numero11/perroquet.png');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'unexpected onque') {
+    	message.channel.send('http://groquik.chez.com/provisoire/parla.gif');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'groquik!') {
+    	message.channel.send('Groquik : Ils ont encore volé votre nesquik?! Vous en faites pas, allons y! \n musique se joue \n par ici le nesquik! \n nesquik, on en a une énorme envie!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Groquik!') {
+    	message.channel.send('Groquik : Ils ont encore volé votre nesquik?! Vous en faites pas, allons y! \n musique se joue \n par ici le nesquik! \n nesquik, on en a une énorme envie!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Groquik !') {
+    	message.channel.send('Groquik : Ils ont encore volé votre nesquik?! Vous en faites pas, allons y! \n musique se joue \n par ici le nesquik! \n nesquik, on en a une énorme envie!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'groquik !') {
+    	message.channel.send('Groquik : Ils ont encore volé votre nesquik?! Vous en faites pas, allons y! \n musique se joue \n par ici le nesquik! \n nesquik, on en a une énorme envie!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'unexpected adibou') {
+    	message.channel.send('http://adibou.fr/images/adibou2.jpg');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'unexpected croustinews') {
+    	message.channel.send('http://www.softdrink-paris.com/166-large_default/ancel-sticks-bretzels-boite-de-300g.jpg');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
