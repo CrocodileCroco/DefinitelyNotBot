@@ -881,5 +881,44 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'xodi start') {
+    	message.channel.send('Bienvenue dans X0Di, choisi ton XodiMonst, en gros c"est ton combattant de l"univers de xodi, alors tu choisi qui? \n xodi chizo \n xodi carrédigit \n xodi foulfeu');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'xodi chizo') {
+      if ("xodi" + message.author.id == null) {
+    	  message.channel.send('Tu a choisi chizo ! Ton Xodimonst est consultabe en écrivant xodi mystat');
+        var "xodi" + message.author.id = "chizo";
+      }
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'xodi carrédigit') {
+      if ("xodi" + message.author.id == null) {
+    	  message.channel.send('Tu a choisi Carrédigit ! Ton Xodimonst est consultabe en écrivant xodi mystat');
+        var "xodi" + message.author.id = "carredigit";
+      }
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'xodi foulfeu') {
+      if ("xodi" + message.author.id == null) {
+    	  message.channel.send('Tu a choisi foulfeu ! Ton Xodimonst est consultabe en écrivant xodi mystat');
+        var "xodi" + message.author.id = "foulfeu";
+      }
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'xodi mystat') {
+    	message.channel.send('EN CONSTRUCTION! :O');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
