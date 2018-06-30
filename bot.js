@@ -649,29 +649,7 @@ client.on('message', message => {
     }
 });            
 
-client.on('message', message => {
-    if (!message.guild) return;
-    if (message.content === '!drmario') {
-    	if (message.member.voiceChannel) {
-        const ytdl = require('ytdl-core');
-        const streamOptions = { seek: 0, volume: 1 };
-          message.member.voiceChannel.join()
-          .then(connection => {
-          const stream = ytdl('https://www.youtube.com/watch?v=uTuK79rgrjY', { filter : 'audioonly' });
-          const dispatcher = connection.playStream(stream, streamOptions);
-      })
-        .catch(console.error);
-      } else {
-        message.reply('You need to join a voice channel first!');
-      }
-  	}
-});
 
-client.on('message', message => {
-    if (message.content === '!stop') {
-    	message.member.voiceChannel.leave();
-  	}
-});
 
 client.on('message', message => {
     if (message.content === '!bossgen') {
