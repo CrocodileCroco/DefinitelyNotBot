@@ -881,11 +881,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content.startsWith("x)")) {
-    	message.reply('T"es Sérieux? Faire un x) tout les 2 secondes ça sert juste a rien, limite ça pollue, mais ça fait genre le mec a pas de personalité et il utilise pas d"autres smiley comme :D ou :) , alors, un jour tu devra comprendre que x)er sert a que dalle appart spammer et polluer avec du x)');
-  	}
-});
 
 
 // THIS  MUST  BE  THIS  WAY
