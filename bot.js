@@ -90,7 +90,6 @@ var hostilegtext = [
   "JAIMEZAIUS",
   "Zapdexio",
   "Kepa64",
-  "Dobby",
   "LOKATAIIIIIIIIIIIR",
   "PROPRIETAIIIIIIIIIIIR",
   "Linuxien",
