@@ -15,6 +15,7 @@
     "node-coinmarketcap": "0.2.0",
     "ytdl-core": "0.20.4",
     "node-opus": "0.3.0",
-    "ffmpeg-binaries": "3.2.2-3"
+    "ffmpeg-binaries": "3.2.2-3",
+    "snoowrap": "1.15.2"
   }
 }
