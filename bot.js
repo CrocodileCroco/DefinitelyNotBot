@@ -849,7 +849,12 @@ client.on('message', message => {
             color: 13632027,
             description: "You broke a door ! Now you are to door number " + doorgame + " but you did not get coins"
           }});
+      message.channel.send({embed : {
+            color: 13632027,
+            description: "You need buy another doorhammer to use doorhammer again :scream_cat:"
+          }});
         doorist = ['lol'];
+        doorhammer = 0;
       }
   	}
 });
@@ -862,6 +867,7 @@ client.on('message', message => {
              color: 13632027,
              description: "The team got DoorHammer ! Use !doorhammer to break a door"
           }});
+        doorcoins = doorcoins - 45;
         }
         if (doorcoins < 45) {
          message.channel.send('Sorry ! You need 45 and more doorcoins to buy that.'); 
