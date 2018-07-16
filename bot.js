@@ -15,6 +15,8 @@ var doorandom = 0;
 var doorist = ['lol'];
 var doorlast = "nobody";
 var hostilelevel = 0;
+var doorhammer = 0;
+var doorcoins = 0;
 
 //test
 //test 2
@@ -797,9 +799,14 @@ client.on('message', message => {
         if (doorandom == 1) {
           doorgame = doorgame + 1;
           doorlast = message.author.tag;
+          doorcoins = doorcoins + Math.floor(Math.random() * 10);
           message.channel.send({embed : {
             color: 8781568,
-            description: ":tada: You Opened a door! You Are Now To Door Number **" + doorgame + "** :tada:"
+            description: ":tada: You Opened a door! You Are Now To Door Number **" + doorgame + "** :tada: , and you have now " + doorcoins + " doorcoins!"
+          }});
+          message.channel.send({embed : {
+            color: 8781568,
+            description: "Remember, use !doorshop to go to the shop"
           }});
           doorist = ['lol'];
         }
@@ -812,6 +819,53 @@ client.on('message', message => {
             color: 13632027,
             description: "**DoorPass Statistics** [ Door Level : " + doorgame + " ]  [ Last Door Opener : " + doorlast + " ]"
           }});
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorshop') {
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "Available Items : doorhammer (!doorbuy ItemName)"
+          }});
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorcoins') {
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "The whole game team has " + doorcoins + " doorcoins"
+          }});
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorhammer') {
+      if (doorhammer == 1) {
+        doorgame = doorgame + 1;
+        doorlast = message.author.tag;
+    	message.channel.send({embed : {
+            color: 13632027,
+            description: "You broke a door ! Now you are to door number " + doorgame + " but you did not get coins"
+          }});
+        doorist = ['lol'];
+      }
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!doorbuy doorhammer') {
+        if (doorcoins > 45) {
+        doorhammer = 1;
+    	  message.channel.send({embed : {
+             color: 13632027,
+             description: "The team got DoorHammer ! Use !doorhammer to break a door"
+          }});
+        }
+        if (doorcoins < 45) {
+         message.channel.send('Sorry ! You need 45 and more doorcoins to buy that.'); 
+        }
   	}
 });
 
