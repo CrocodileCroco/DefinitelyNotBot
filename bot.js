@@ -485,13 +485,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '@everyone') {
-    	message.reply('https://i.redd.it/tlvf3mo9tosy.jpg');
+    	message.reply('<:png1:469889200783622154> :angry: **MAIS DE OU TU PING LA** :angry: <:png1:469889200783622154>');
   	}
 });
 
 client.on('message', message => {
     if (message.content === '@here') {
-    	message.reply('https://i.redd.it/tlvf3mo9tosy.jpg');
+    	message.reply('<:png1:469889200783622154> :angry: **MAIS DE OU TU PING LA** :angry: <:png1:469889200783622154>');
   	}
 });
 
