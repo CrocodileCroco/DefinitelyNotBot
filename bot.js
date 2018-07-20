@@ -1030,6 +1030,21 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content.startsWith("!emojify")) {
+      var messaj1 = message.content;
+      var bee = /B/g;
+      var messaj2 = messaj1.replace(bee, ":b:");
+    	message.channel.send(messaj2 + " :joy: :ok_hand: :100: :joy: :joy:");
+  	}
+});
+
+
+
+
+
+
+
+client.on('message', message => {
     	console.log(message.content + " " + message.author.tag)
 });
 
