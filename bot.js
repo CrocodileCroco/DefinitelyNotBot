@@ -723,6 +723,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
+  if (message.author.id == 313264056733532170) {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
         if(command === "ksay") {
@@ -734,8 +735,8 @@ client.on('message', message => {
         // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
         // And we get the bot to say the thing: 
         message.channel.send(sayMessage);
-        message.channel.send("(commande lancée par " + message.author.tag + " )")
     }
+  }
 });            
 
 
