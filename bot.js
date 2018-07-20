@@ -1034,7 +1034,8 @@ client.on('message', message => {
       var messaj1 = message.content;
       var bee = /B/g;
       var messaj2 = messaj1.replace(bee, ":b:");
-    	message.channel.send(messaj2 + " :joy: :ok_hand: :100: :joy: :joy:");
+      var messaj3 = messaj2.replace("!emojify", "");
+    	message.channel.send(messaj3 + " :joy: :ok_hand: :100: :joy: :joy:");
   	}
 });
 
