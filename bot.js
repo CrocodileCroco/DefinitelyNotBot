@@ -1039,8 +1039,15 @@ client.on('message', message => {
   	}
 });
 
-
-
+//Celui la c pour un RP Bot (e_e)
+Bot.on('message', message => {
+    if (message.author.id == 313264056733532170) {
+        if (message.content.startsWith('RPsayBOT')) {
+            var str = message.content
+            Bot.channels.get("470215594269212682").send(str.substring(8))
+        }
+    }
+});
 
 
 
