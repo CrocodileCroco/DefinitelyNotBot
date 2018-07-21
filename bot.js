@@ -20,6 +20,7 @@ var doorcoins = 0;
 
 //test
 //test 2
+//a
 
 var hostilegtext = [
   "Jean",
