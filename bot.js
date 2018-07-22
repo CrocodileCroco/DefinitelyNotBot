@@ -1032,6 +1032,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.startsWith("!emojify")) {
+      if(message.author.bot) return;
       var messaj1 = message.content;
       var bee = /B/g;
       var messaj2 = messaj1.replace(bee, ":b:");
