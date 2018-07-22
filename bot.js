@@ -248,6 +248,50 @@ var jeu2 = [
   "compétitif"
 ]
 
+var verity1 = [
+  "Zapdexio",
+  "ZiJo",
+  "La Redbox",
+  "Wikipédia",
+  "Facebook",
+  "Twitter",
+  "Mastodon",
+  "Roblox",
+  "Despacito",
+  "Maplestory",
+  "Klonoa",
+  "Les Vidéos YTPMV Scans",
+  "Tony Yoka",
+  "Les placements de produits",
+  "La publicité",
+  "Les Furries",
+  "Dr Zaius",
+  "Le Délire Onque",
+  "Adibou",
+  "Adiboudchou",
+  "LL Productions FR",
+  "Vinesauce",
+  "Dadyday",
+  "M6",
+  "TF1",
+  "TF1 SERIES FILM",
+  "Sploon"
+]
+
+var verity2 = [
+  "est un placement de produit de SFR!",
+  "est une société mal intentionné",
+  "est une société secrète du complot",
+  "est chez free! :angry:",
+  "est un placement de produit de TéléShopping!",
+  "est un réseau venant des profondeurs du web!",
+  "est secretement une marque!",
+  "gagnent 1 milliards par mois!",
+  "ont déja arnaqué au moins une fois en tant que entreprise!",
+  "est une société elsagate!",
+  "est une seule personne!!"
+]
+
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setUsername('Kaede')
@@ -1049,6 +1093,14 @@ client.on('message', message => {
             client.channels.get("470215594269212682").send(str.substring(8))
         }
     }
+});
+
+client.on('message', message => {
+    if (message.content === '!vérité') {
+      var verito1 = verity1[Math.floor(Math.random() * verity1.length)];
+      var verito2 = verity2[Math.floor(Math.random() * verity2.length)];
+    	message.channel.send(verito1 + " " + verito2);
+  	}
 });
 
 
