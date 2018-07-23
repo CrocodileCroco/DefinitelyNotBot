@@ -294,8 +294,7 @@ var verity2 = [
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setUsername('Kaede')
-    client.user.setPresence({ game: { name: 'Être pa vil1', type: 0 } });
+    client.user.setPresence({ game: { name: 'Délire Simulator | !web for help', type: 0 } });
 });
 
 client.on('message', message => {
