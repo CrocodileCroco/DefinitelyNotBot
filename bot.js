@@ -1103,6 +1103,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!guilty') {
+    	message.channel.send('https://media.discordapp.net/attachments/360050049826160640/470891379824787457/GAME_OVER.gif');
+  	}
+});
 
 
 
