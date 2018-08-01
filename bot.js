@@ -293,7 +293,7 @@ var verity2 = [
 ]
 
 var eske = [
-  "Je te répond Oui!"
+  "Je te répond Oui!",
   "euhhh Non",
   "Peut être !",
   "Surement",
