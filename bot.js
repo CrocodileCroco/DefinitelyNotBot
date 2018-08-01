@@ -292,6 +292,17 @@ var verity2 = [
   "est une seule personne!!"
 ]
 
+var eske = [
+  "Je te répond Oui!"
+  "euhhh Non",
+  "Peut être !",
+  "Surement",
+  "Pas du tout",
+  "Je ne sais pas",
+  "Absolument !",
+  "Absolument Pas!!"
+  ]
+
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setPresence({ game: { name: 'Délire Simulator | !web for help', type: 0 } });
@@ -1108,7 +1119,26 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content.startsWith("Dis Kaede,")) {
+      var raiponce = eske[Math.floor(Math.random() * eske.length)];
+    	message.channel.send(raiponce);
+  	}
+});
 
+client.on('message', message => {
+    if (message.content.startsWith("Dis kaede,")) {
+      var raiponce = eske[Math.floor(Math.random() * eske.length)];
+    	message.channel.send(raiponce);
+  	}
+});
+
+client.on('message', message => {
+    if (message.content.startsWith("dis kaede,")) {
+      var raiponce = eske[Math.floor(Math.random() * eske.length)];
+    	message.channel.send(raiponce);
+  	}
+});
 
 client.on('message', message => {
     	console.log(message.content + " " + message.author.tag)
