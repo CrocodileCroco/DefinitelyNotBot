@@ -303,6 +303,17 @@ var eske = [
   "Absolument Pas!!"
   ]
 
+var probly = [
+  "C'est Hyper Improbable",
+  "C'est Moyen Improbable",
+  "C'est Plutôt Improbable",
+  "C'est Improbable",
+  "C'est Probable",
+  "C'est Plutôt Probable",
+  "C'est Moyen Probable",
+  "C'est Hyper Probable"
+  ]
+
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setPresence({ game: { name: 'Délire Simulator | !web for help', type: 0 } });
@@ -1141,8 +1152,19 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content.startsWith("!proba")) {
+      var probabo = probly[Math.floor(Math.random() * probly.length)];
+    	message.channel.send(probabo);
+  	}
+});
+
+
+
+client.on('message', message => {
     	console.log(message.content + " " + message.author.tag)
 });
+
+
 
 
 
