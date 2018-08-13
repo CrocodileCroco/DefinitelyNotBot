@@ -314,6 +314,22 @@ var probly = [
   "C'est Hyper Probable"
   ]
 
+var modechiant = [
+  "Au secours!",
+  "Quel bide!",
+  "J'ai jamais vu une chose pareille!",
+  "D'accord!",
+  "Je veut ta réponse!",
+  "Envoie moi un MP toi!",
+  "LALALALALALALAOALOALALOALOALOALOA",
+  "EUGAGA",
+  "T'a trop bu mon gars",
+  "ALALALALALAAAAAAAAAAAAAAAAAAAAAAAAARRRRRRRRRRRR",
+  "ONCHE"
+  ]
+
+var mdchiant = 0;
+
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setPresence({ game: { name: 'Délire Simulator | !web for help', type: 0 } });
@@ -1169,9 +1185,26 @@ client.on('message', message => {
     	console.log(message.content + " " + message.author.tag)
 });
 
+client.on('message', message => {
+  if (mdchiant == 1) {
+        var chier = modechiant[Math.floor(Math.random() * modechiant.length)];
+        message.channel.send(chier);
+      }
+  });
 
+client.on('message', message => {
+    if (message.content === '!chiant 1') {
+      mdchiant = 1;
+    	message.channel.send("MODE CHIANT ACTIVATED");
+  	}
+});
 
-
+client.on('message', message => {
+    if (message.content === '!chiant 0') {
+      mdchiant = 0;
+    	message.channel.send("MODE CHIANT REMOVED");
+  	}
+});
 
 
 
