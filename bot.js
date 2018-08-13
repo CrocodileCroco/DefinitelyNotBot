@@ -1187,6 +1187,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (mdchiant == 1) {
+        if(message.author.bot) return;
         var chier = modechiant[Math.floor(Math.random() * modechiant.length)];
         message.channel.send(chier);
       }
