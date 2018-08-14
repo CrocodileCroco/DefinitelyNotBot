@@ -1185,27 +1185,7 @@ client.on('message', message => {
     	console.log(message.content + " " + message.author.tag)
 });
 
-client.on('message', message => {
-  if (mdchiant == 1) {
-        if(message.author.bot) return;
-        var chier = modechiant[Math.floor(Math.random() * modechiant.length)];
-        message.channel.send(chier);
-      }
-  });
 
-client.on('message', message => {
-    if (message.content === '!chiant 1') {
-      mdchiant = 1;
-    	message.channel.send("MODE CHIANT ACTIVATED");
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '!chiant 0') {
-      mdchiant = 0;
-    	message.channel.send("MODE CHIANT REMOVED");
-  	}
-});
 
 
 
