@@ -1180,6 +1180,14 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content.startsWith("!posta ")) {
+      if (message.author.id == 313264056733532170) {
+        var postax = message.content
+    	  client.channels.get(376073988704829441).send(postax.substring(7))
+      }
+  	}
+});
 
 client.on('message', message => {
     	console.log(message.content + " " + message.author.tag)
