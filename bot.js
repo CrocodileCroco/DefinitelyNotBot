@@ -1184,8 +1184,7 @@ client.on('message', message => {
     if (message.content.startsWith("!posta ")) {
       if (message.author.id == 313264056733532170) {
         var postax = message.content
-        var chainel = client.channels.get(376073988704829441)
-    	  chainel.send(postax.substring(7))
+        client.channels.get("376073988704829441").send(postax.substring(7))
       }
   	}
 });
