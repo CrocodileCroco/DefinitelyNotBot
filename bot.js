@@ -328,6 +328,65 @@ var modechiant = [
   "ONCHE"
   ]
 
+var phrs1 = [
+  "Hé Toi!",
+  "Il parait que",
+  "On s'en doutais",
+  "Disons que",
+  "Il était une fois",
+  "Sans faire exprès"
+  ]
+
+var phrs2 = [
+  "Mikit",
+  "Jean Luc Reichmann",
+  "Dadyday",
+  "Supergustin",
+  "Von Blitz",
+  "Gaston Molotof",
+  "Le Platypus",
+  "Canard VC en Colère",
+  "Lilluzion",
+  "Le Lorax",
+  "Shinoyoruka",
+  "Pierre Caillou",
+  "Jean Paté",
+  "rigolestp",
+  "Chadtronic",
+  "PeanutButterGamer",
+  "SMG4",
+  "Pewdiepie",
+  "LinksTheSun",
+  "Squeezie",
+  "Cyprien",
+  "Narouxto"
+  ]
+
+var phrs3 = [
+  "a",
+  "avait",
+  "viens de",
+  "a bu en",
+  "sans arrêt"
+  ]
+
+var phrs4 = [
+  "tuer",
+  "boire",
+  "chanter avec",
+  "mettre KO",
+  "exploser"
+  ]
+
+var phrs5 = [
+  "Indéfiniment",
+  "Tout les 2 jours",
+  "Sans Arrêt",
+  "Pour Rien",
+  "Pour la justice",
+  "Pour danser"
+  ]
+
 var mdchiant = 0;
 
 client.on('ready', () => {
@@ -1193,7 +1252,17 @@ client.on('message', message => {
     	console.log(message.content + " " + message.author.tag)
 });
 
-
+client.on('message', message => {
+    if (message.content.startsWith("!histoirelol")) {
+      var phra1 = phrs1[Math.floor(Math.random() * phrs1.length)];
+      var phra2 = phrs2[Math.floor(Math.random() * phrs2.length)];
+      var phra3 = phrs3[Math.floor(Math.random() * phrs3.length)];
+      var phra4 = phrs4[Math.floor(Math.random() * phrs4.length)];
+      var phra5 = phrs2[Math.floor(Math.random() * phrs2.length)];
+      var phra6 = phrs5[Math.floor(Math.random() * phrs5.length)];
+    	message.channel.send(phra1 + " " + phra2 + " " + phra3 + " " + phra4 + " " + phra5 + " " + phra6);
+  	}
+});
 
 
 
