@@ -1264,6 +1264,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!kaedepremium') {
+    	message.channel.send('Vous n\'avez pas Kaede Premium, écrivez !premiumbuy, et vous aurez kaede premium en payant 50 de vos DiscordCoins');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!premiumbuy') {
+    	message.channel.send('Vous avez acheté Kaede Premium pour 50 DiscordCoins, Kaede Premium donne un accès illimité au épisodes de JoJo et des jeux normalement payant! Recevez bientôt cela en MP!');
+  	}
+});
 
 
 // THIS  MUST  BE  THIS  WAY
