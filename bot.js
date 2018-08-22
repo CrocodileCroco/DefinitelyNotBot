@@ -359,7 +359,21 @@ var phrs2 = [
   "LinksTheSun",
   "Squeezie",
   "Cyprien",
-  "Narouxto"
+  "Narouxto",
+  "Sonirika La Seule Tee Qui n'est pas un mec",
+  "enzocosmos",
+  "lolipopcorn",
+  "DarkDadyday",
+  "Kidpaddleetcie",
+  "Rayman",
+  "Globox",
+  "Inspecteur Gadget",
+  "Sonic",
+  "Tails",
+  "Daydady le clone vilain de dadyday",
+  "Un Tee",
+  "Un Furry",
+  "Un Fursuiter"
   ]
 
 var phrs3 = [
@@ -367,7 +381,9 @@ var phrs3 = [
   "avait",
   "viens de",
   "a bu en",
-  "sans arrêt"
+  "sans arrêt",
+  "pour la justice viens de",
+  "lancer des tnt sur les creepers et puis il"
   ]
 
 var phrs4 = [
@@ -375,7 +391,15 @@ var phrs4 = [
   "boire",
   "chanter avec",
   "mettre KO",
-  "exploser"
+  "exploser",
+  "mitrailler bombarder tuer assassiner",
+  "périmer le délire de",
+  "faire l'amour avec",
+  "jeter dans le puit",
+  "enterrer",
+  "dessiner du r34 de",
+  "salsifisifier",
+  "manger les cookies de"
   ]
 
 var phrs5 = [
