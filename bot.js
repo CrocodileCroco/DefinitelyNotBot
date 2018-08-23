@@ -760,7 +760,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!web') {
-    	message.channel.send('https://crocodilecroco.github.io/kaede/');
+    	message.channel.send('https://crocodilecroco.github.io/kaedev2/');
   	}
 });
 
@@ -773,7 +773,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.channel.send('Une liste de commande est trouvable sur https://crocodilecroco.github.io/kaede/ | A Command List can be found on https://crocodilecroco.github.io/kaede/');
+    	message.channel.send('https://crocodilecroco.github.io/kaedev2/');
   	}
 });
 
