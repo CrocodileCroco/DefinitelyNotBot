@@ -436,17 +436,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'croco') {
-    	message.reply('LL on te parle!');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'troll') {
-    	message.reply('morsay et cortex cest du troll non professionel tout comme TOI');
-  	}
-});
 
 client.on('message', message => {
     if (message.content === 'horloge') {
@@ -456,87 +445,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'tg le bot') {
-    	message.reply('C pas gentil :(');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'nope') {
-    	message.reply('Correction : Nope.AVI');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'chinese') {
+    if (message.content === 'k!chinese') {
     	message.reply('CHINESE CHINESE CHINESE , ANYTHING GOES.. EVEN CHINESE! http://i0.kym-cdn.com/entries/icons/original/000/022/632/CHINESE.jpg');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'ok google') {
-    	message.reply('Pardon? Je ne suis pas Google ! Voyons donc :| ');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'rastacouette') {
-    	message.reply('Queuah?!');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'allo') {
-    	message.reply('Oui? Allo?? http://i.cubeupload.com/LmqyrB.png ');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'a plus') {
-    	message.reply('A plus tard !');
-  	}
-});
-
-
-client.on('message', message => {
-    if (message.content === 'la') {
-    	message.reply('Ou la !');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'ftg') {
-    	message.reply('Au moins j aurais essayé');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'cyka blyat') {
-    	message.reply('NYA ! NE DIT PAS SA SINON TU AURA AFFAIRE A MUAH ! NYYA');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'google') {
-    	message.reply('google est ton ami');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'le') {
-    	message.reply('Le quoi? http://i.cubeupload.com/LmqyrB.png ');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'ha') {
-    	message.reply('http://i.cubeupload.com/ubtikz.png');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'ptdr t ki') {
-    	message.reply('http://i.cubeupload.com/C5tg7S.gif EUH...');
   	}
 });
 
@@ -648,27 +558,21 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === '@everyone') {
-    	message.reply('<:png1:469889200783622154> :angry: **MAIS DE OU TU PING LA** :angry: <:png1:469889200783622154>');
-  	}
-});
+//client.on('message', message => {
+//    if (message.content === '@everyone') {
+//    	message.reply('<:png1:469889200783622154> :angry: **MAIS DE OU TU PING LA** :angry: <:png1:469889200783622154>');
+//  	}
+//});
 
-client.on('message', message => {
-    if (message.content === '@here') {
-    	message.reply('<:png1:469889200783622154> :angry: **MAIS DE OU TU PING LA** :angry: <:png1:469889200783622154>');
-  	}
-});
+//client.on('message', message => {
+//    if (message.content === '@here') {
+//    	message.reply('<:png1:469889200783622154> :angry: **MAIS DE OU TU PING LA** :angry: <:png1:469889200783622154>');
+//  	}
+//});
 
 client.on('message', message => {
     if (message.content === 't!ouinon') {
     	message.channel.send('t!choose oui | non');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 't!tg') {
-    	message.channel.send('Voici un tatsugotchi, si il n"apparait pas il faut l"acheter, désolé');
   	}
 });
 
@@ -759,7 +663,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content === '!web') {
+    if (message.content === 'k!web') {
     	message.channel.send('https://crocodilecroco.github.io/kaedev2/');
   	}
 });
@@ -772,7 +676,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!help') {
+    if (message.content === 'k!help') {
     	message.channel.send('https://crocodilecroco.github.io/kaedev2/');
   	}
 });
@@ -843,7 +747,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '!fightboss') {
+  if (message.content === 'k!fightboss') {
     	  if (bossla == 1) {
           bossvie = bossvie - 3
           message.channel.send('Le boss perd 3 vie, il a maintenant ' + bossvie);
@@ -858,7 +762,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-if (message.content === '!boss') {
+if (message.content === 'k!boss') {
     	  if (bossla == 0) {
           bossla = 1;
           message.channel.send('Un Boss Apparait avec 100 vies');
@@ -871,7 +775,7 @@ if (message.content === '!boss') {
 });
 
 client.on('message', message => {
-    if (message.content === '!bossheal') {
+    if (message.content === 'k!bossheal') {
       bossvie = 100;
     	message.channel.send('Le boss est réinitialisé, ATTENTION SI VOUS REINITIALISEZ ABUSIVEMENT, VOUS AUREZ UN AVERTISSEMENT');
   	}
@@ -929,19 +833,19 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === '!logkaede on') {
-      logka = 1;
-    	message.channel.send('logs are activated now');
-  	}
-});
+//client.on('message', message => {
+//    if (message.content === '!logkaede on') {
+//      logka = 1;
+//    	message.channel.send('logs are activated now');
+//  	}
+//});
 
-client.on('message', message => {
-    if (logka == 1) {
-      if (message.author.bot) return;
-    	message.guild.channels.find("name", "kaede-logger").send(message.content + ' | de ' + message.author.tag);
-  	}
-});
+//client.on('message', message => {
+//    if (logka == 1) {
+//      if (message.author.bot) return;
+//    	message.guild.channels.find("name", "kaede-logger").send(message.content + ' | de ' + message.author.tag);
+//  	}
+//});
 
 client.on('message', message => {
     if (message.content === '!doorpass') {
@@ -1089,61 +993,9 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Non.') {
-    	message.channel.send('Oui!');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'NON.') {
-    	message.channel.send('OUI!');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'NON') {
-    	message.channel.send('OUI!');
-  	}
-});
-
-client.on('message', message => {
-  if (message.content === '!pdp') {
+  if (message.content === 'k!pdp') {
     message.reply(message.author.avatarURL);
   }
-});
-
-client.on('message', message => {
-  if (message.content === 'ta gueule') {
-    hostilelevel = hostilelevel + 1
-    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'tg') {
-    hostilelevel = hostilelevel + 1
-    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'TG') {
-    hostilelevel = hostilelevel + 1
-    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'Ta gueule') {
-    hostilelevel = hostilelevel + 1
-    message.author.send("Non, toi ferme ta gueule ! Pour la peine je vais augumenter le niveau de hostilité à " + hostilelevel + " ! De sévères conséquences arrivera si tu continue. Signé Kaede");
-  }
-});
-
-client.on('message', message => {
-    if (message.content === 'A') {
-    	message.channel.send('B');
-  	}
 });
 
 client.on('message', message => {
